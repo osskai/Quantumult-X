@@ -36,6 +36,9 @@
 # 拦截推荐页顶部广告
 ^https?:\/\/api\.zhihu\.com\/api\/v4\/ecom_data\/config url reject-dict
 
+# 会员页面 弹窗,悬浮动图
+^https:\/\/api\.zhihu\.com\/(bazaar\/float_window|market\/popovers_v2) url reject-dict
+
 # 底栏加号的广告
 ^https?:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/settings url reject-dict
 
@@ -46,7 +49,8 @@
 ^https?:\/\/api\.zhihu\.com\/feed\/render\/revisit\/tag_config url reject-dict
 
 # 去除回答页的相关搜索
-^https?:\/\/www\.zhihu\.com\/api\/v\d+\/search\/related_queries\/answer url reject-dict
+^https？:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? url response-body "recommend_queries":\{.+\} response-body "recommend_queries":{}
+^https?:\/\/www\.zhihu\.com\/api\/v\d+\/search\/related_queries\/(article|answer)\/\d+ url reject-dict
 
 # 暂不清楚作用
 ^https?:\/\/api\.zhihu\.com\/commercial_api\/banners_v3\/app_topstory_banner url reject-dict
@@ -67,7 +71,7 @@
 ^https?:\/\/api\.zhihu\.com\/user-credit\/basis url script-response-body https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
 # 关注页 - 内容优化及屏蔽转发的黑名单用户想法
-^https?:\/\/api\.zhihu\.com\/moments_v3\? url script-response-body https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+^https?:\/\/api\.zhihu\.com\/(moments_v3|topstory\/hot-lists\/total|topstory\/recommend)\? url script-response-body https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
 # 推荐页 - 移除黑名单用户发布的文章、去除广告，及自定义一些屏蔽项目
 ^https:\/\/api\.zhihu\.com\/topstory\/recommend url script-response-body https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
