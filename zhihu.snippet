@@ -49,7 +49,7 @@
 ^https?:\/\/api\.zhihu\.com\/feed\/render\/revisit\/tag_config url reject-dict
 
 # 去除回答页的相关搜索
-^https？:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? url response-body "recommend_queries":\{.+\} response-body "recommend_queries":{}
+^https?:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? url response-body "recommend_queries":\{.+\} response-body "recommend_queries":{}
 ^https?:\/\/www\.zhihu\.com\/api\/v\d+\/search\/related_queries\/(article|answer)\/\d+ url reject-dict
 
 # 暂不清楚作用
