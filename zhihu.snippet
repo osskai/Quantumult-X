@@ -111,7 +111,7 @@
 
 # 热榜页 - 去除广告
 ;^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists?(\?|\/) url script-response-body https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
-^https?:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\? url reject-dict
+^https?:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?/\d+ url reject-dict
 
 # 搜索页 - 去除预置广告
 ;^https?:\/\/api\.zhihu\.com\/search\/preset_words\? url script-response-body https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
