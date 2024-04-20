@@ -82,6 +82,9 @@
 # 推荐页 - 移除黑名单用户发布的文章、去除广告，及自定义一些屏蔽项目
 ^https?:\/\/api\.zhihu\.com\/topstory\/recommend url script-response-body https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
+# 想法页 - 屏蔽
+^https?:\/\/api\.zhihu\.com\/prague\/feed url reject-dict
+
 # 小说页 - 屏蔽
 ^https?:\/\/api\.zhihu\.com\/km-vip-zhihu-web\/vip_tab\/vip_pin\/discover url reject-dict
 
