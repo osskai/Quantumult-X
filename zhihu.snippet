@@ -7,7 +7,7 @@
 ^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config url reject
 
 # 屏蔽我的页面开通会员的卡片
-# ^https?:\/\/api\.zhihu\.com\/unlimited\/go\/my_card url reject
+^https?:\/\/api\.zhihu\.com\/unlimited\/go\/my_card url reject
 
 # 拦截开屏广告
 ^https?:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\? url reject-dict
@@ -46,6 +46,7 @@
 ^https?:\/\/api\.zhihu\.com\/feed\/render\/revisit\/current_reading url reject-dict
 
 # 去除搜索栏下的历史，推荐和热点
+^https?:\/\/api\.zhihu\.com\/root\/tab url reject-dict
 ^https?:\/\/www\.zhihu\.com\/api\/v\d+\/search\/related_queries\/(article|answer)\/\d+ url reject-dict
 ^https?:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? url response-body "recommend_queries":\{.+\} response-body "recommend_queries":{}
 ^https?:\/\/api\.zhihu\.com\/search\/hot_search\? url reject-dict
