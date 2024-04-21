@@ -12,8 +12,8 @@ if (url.includes("/prod")) {
       })
       obj[i]['navigationAll'] = output
 
-      const conentItems = obj[i]['content']
-      const output2 = conentItems.filter((item) => {
+      const contentItems = obj[i]['content']
+      const output2 = contentItems.filter((item) => {
           const sortIndex = parseInt(item['sort'])
           return sortIndex < 2
       })
