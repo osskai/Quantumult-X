@@ -3,16 +3,21 @@ const url = $request.url;
 let obj = JSON.parse($response.body);
 
 if (url.includes("/prod")) {
-  const existedItems = obj[0]['navigationAll']
   const deletedItems = ['出行', '财富']
-  
-  const length = existedItems.length
-  for (var i = 0; i < length; ++i) {
-    var item = existedItems[i]
-    const itemName = item['lableName']
-    if (deletedItems.indexOf(itemName) !== -1) {
-      delete existedItems[i]
-    } 
+  for (var i = 0; i < 2; ++i) {
+      const existedItems = source[i]['navigationAll']
+      const output = existedItems.filter((item) => {
+          const itemName = item['lableName']
+          return deletedItems.indexOf(itemName) === -1
+      })
+      source[i]['navigationAll'] = output
+
+      const conentItems = source[i]['content']
+      const output2 = conentItems.filter((item) => {
+          const sortIndex = parseInt(item['sort'])
+          return sortIndex < 2
+      })
+      source[i]['content'] = output2
   }
 } 
 
