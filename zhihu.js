@@ -14,4 +14,6 @@ if (url.includes("/api/v4/answers")) {
   item.forEach((i) => {
     delete obj[i];
   });
+} else if (url.includes("/appcloud2.zhihu.com/v3/resource")) {
+  
 }
