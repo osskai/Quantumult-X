@@ -15,3 +15,5 @@ if (url.includes("/prod")) {
     } 
   }
 } 
+
+$done({ body: JSON.stringify(obj) });
