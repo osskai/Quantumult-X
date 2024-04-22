@@ -18,9 +18,15 @@ if (url.includes("/prod")) {
           return deletedContents.indexOf(contentName) === -1
       })
    }
-} 
 
-obj[0]['content'][3]['data'] = []
-obj[1]['content'][2]['data'] = []
+  obj[0]['content'][3]['data'] = []
+  obj[1]['content'][2]['data'] = []
+} else if (url.includes('/message')) {
+  const keepMsg = ['交易通知']
+  obj['data'] = obj['data'].filter((item) => {
+      const itemName = item['title']
+      return keepMsg.indexOf(itemName) !== -1
+  })
+}
 
 $done({ body: JSON.stringify(obj) });
