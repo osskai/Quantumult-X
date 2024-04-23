@@ -7,6 +7,7 @@ if (url.includes("/center220430")) {
   delete obj['data']['myUseFuntion']
   delete obj['data']['mineResource']
   delete obj['data']['myCreatorFunction']
+  obj['data']['top_rightset'].pop()
 } else if (url.includes("/tab2017")) {
   const keptItems = ['个人中心']
   const newTabSet = obj['data']['tab_set'].filter((item) => {
