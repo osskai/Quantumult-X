@@ -7,7 +7,7 @@ if (url.includes("/center220430")) {
   delete obj['data']['myUseFuntion']
   delete obj['data']['mineResource']
   delete obj['data']['myCreatorFunction']
-} else if (url.includes("/tab2017") {
+} else if (url.includes("/tab2017")) {
   const keptItems = ['个人中心']
   const newTabSet = obj['data']['tab_set'].filter((item) => {
     const itemTitle = item['title']
