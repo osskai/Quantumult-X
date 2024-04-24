@@ -1,4 +1,4 @@
-if (!$response.body) 
+if (!$response.body) $done({})
 const url = $request.url;
 let obj = JSON.parse($response.body);
 
