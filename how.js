@@ -1,4 +1,4 @@
-if (!$response.body) $done({});
+if (!$response.body) 
 const url = $request.url;
 let obj = JSON.parse($response.body);
 
@@ -8,6 +8,8 @@ if (url.includes("/center220430")) {
   delete obj['data']['mineResource']
   delete obj['data']['myCreatorFunction']
   obj['data']['top_rightset'].pop()
+
+  $done({ body: JSON.stringify(obj) });
 } else if (url.includes("/tab2017")) {
   const keptItems = ['个人中心']
   const newTabSet = obj['data']['tab_set'].filter((item) => {
@@ -16,6 +18,8 @@ if (url.includes("/center220430")) {
   })
   obj['data'] = {}
   obj['data']['tab_set'] = newTabSet
+
+  $done({ body: JSON.stringify(obj) });
 }
 
-$done({ body: JSON.stringify(obj) });
+$done({});
