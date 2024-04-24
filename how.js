@@ -20,6 +20,6 @@ if (url.includes("/center220430")) {
   obj['data']['tab_set'] = newTabSet
 
   $done({ body: JSON.stringify(obj) });
+} else {
+  $done({});
 }
-
-$done({});
