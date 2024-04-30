@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-^https:\/\/cubox\.pro\/c\/api\/userInfo url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/cubox.js
+^https:\/\/cubox\.pro\/c\/api\/userInfo url script-response-body https://raw.githubusercontent.com/osskai/Quantumult-X/main/cube.js
 
 [mitm] 
 
