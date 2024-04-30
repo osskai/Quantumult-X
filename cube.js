@@ -21,7 +21,7 @@ const url = $request.url;
 let obj = JSON.parse($response.body);
 
 if (url.includes('/userInfo') != -1) {
-  obj.data.level = 2;
+  obj.data.level = 1;
   obj.data.expireTime = "2099-09-12T23:50:23+08:00";
   obj.data.nickName = "Kaien";
   obj.data.thirdNickName = "Kaien";
