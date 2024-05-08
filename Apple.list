@@ -1,14 +1,14 @@
 # NAME: Apple
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-05-09 02:10:29
-# HOST: 263
+# AUTHOR: osskai
+# REPO: https://github.com/osskai/Quantumult-X
+# UPDATED: 2024-05-09
+# HOST: 262
 # HOST-KEYWORD: 7
 # HOST-SUFFIX: 1549
 # HOST-WILDCARD: 8
 # IP-CIDR: 10
 # USER-AGENT: 23
-# TOTAL: 1860
+# TOTAL: 1859
 HOST,apps.apple.com,Apple
 HOST,itunes.apple.com,Apple
 HOST,a1.mzstatic.com,Apple
