@@ -1,14 +1,15 @@
 # NAME: Apple
-# AUTHOR: osskai
-# REPO: https://github.com/osskai/Quantumult-X
-# UPDATED: 2024-05-09
-# HOST: 262
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-05-09 02:10:29
+# HOST: 268
 # HOST-KEYWORD: 7
 # HOST-SUFFIX: 1549
 # HOST-WILDCARD: 8
 # IP-CIDR: 10
 # USER-AGENT: 23
-# TOTAL: 1859
+# TOTAL: 1865
+# Remove *.ls.apple.com
 HOST,apps.apple.com,Apple
 HOST,itunes.apple.com,Apple
 HOST,a1.mzstatic.com,Apple
@@ -22,7 +23,11 @@ HOST,amp-api-search-edge.apps.apple.com,Apple
 HOST,amp-api.apps.apple.com,Apple
 HOST,amp-api.media.apple.com,Apple
 HOST,api-edge.apps.apple.com,Apple
+HOST,api-p-ap-c.smoot.apple.com,Apple
+HOST,api-p-ap-d.smoot.apple.com,Apple
+HOST,api-p-ap-e.smoot.apple.com,Apple
 HOST,api.apps.apple.com,Apple
+HOST,api.smoot.apple.cn,Apple
 HOST,app-site-association.cdn-apple.com,Apple
 HOST,appldnld.apple.com,Apple
 HOST,appldnld.apple.com.edgesuite.net,Apple
@@ -90,25 +95,6 @@ HOST,fides-pol.apple.com,Apple
 HOST,gateway.icloud.com,Apple
 HOST,gs-loc-cn.apple.com,Apple
 HOST,gs-loc.apple.com,Apple
-HOST,gsp10-ssl-cn.ls.apple.com,Apple
-HOST,gsp12-cn.ls.apple.com,Apple
-HOST,gsp13-cn.ls.apple.com,Apple
-HOST,gsp4-cn.ls.apple.com,Apple
-HOST,gsp4-cn.ls.apple.com.edgekey.net,Apple
-HOST,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net,Apple
-HOST,gsp5-cn.ls.apple.com,Apple
-HOST,gsp85-cn-ssl.ls.apple.com,Apple
-HOST,gspe11-2-cn-ssl.ls.apple.com,Apple
-HOST,gspe12-cn-ssl.ls.apple.com,Apple
-HOST,gspe19-2-cn-ssl.ls.apple.com,Apple
-HOST,gspe19-cn-ssl.ls.apple.com,Apple
-HOST,gspe19-cn.ls-apple.com.akadns.net,Apple
-HOST,gspe19-cn.ls.apple.com,Apple
-HOST,gspe21-ssl.ls.apple.com,Apple
-HOST,gspe21.ls.apple.com,Apple
-HOST,gspe35-ssl.ls.apple.com,Apple
-HOST,gspe79-cn-ssl.ls.apple.com,Apple
-HOST,gspe85-cn-ssl.ls.apple.com,Apple
 HOST,guzzoni-apple-com.v.aaplimg.com,Apple
 HOST,guzzoni.smoot.apple.com,Apple
 HOST,iadsdk.apple.com,Apple
@@ -235,6 +221,7 @@ HOST,audio.itunes.apple.com,Apple
 HOST,mvod.itunes.apple.com,Apple
 HOST,streamingaudio.itunes.apple.com,Apple
 HOST,news-client-search.apple.com,Apple
+HOST,api-glb-sea.smoot.apple.com,Apple
 HOST,apple.comscoreresearch.com,Apple
 HOST,books.itunes.apple.com,Apple
 HOST,cdn.apple-cloudkit.com,Apple
@@ -243,7 +230,6 @@ HOST,developer.apple.com,Apple
 HOST,devimages-cdn.apple.com,Apple
 HOST,devstreaming-cdn.apple.com,Apple
 HOST,docs-assets.developer.apple.com,Apple
-HOST,gspe1-ssl.ls.apple.com,Apple
 HOST,js-cdn.music.apple.com,Apple
 HOST,lookup-api.apple.com,Apple
 HOST,mask-api.fe.apple-dns.net,Apple
@@ -1037,7 +1023,6 @@ HOST-SUFFIX,gmnetworks.net,Apple
 HOST-SUFFIX,gobeatsye.com,Apple
 HOST-SUFFIX,gobuyonlinestore.net,Apple
 HOST-SUFFIX,goodsdunk.net,Apple
-HOST-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net,Apple
 HOST-SUFFIX,headphonepubs.com,Apple
 HOST-SUFFIX,headphones-cool.com,Apple
 HOST-SUFFIX,headphones-dre.com,Apple
