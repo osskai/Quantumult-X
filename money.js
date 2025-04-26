@@ -21,8 +21,8 @@ const url = $request.url;
 let obj = JSON.parse($response.body);
 
 if (url.includes('/configios') != -1) {
-  obj.data.config.userinfo.vipstart = "2099-09-12T23:50:23+08:00";
-  //obj.data.config.userinfo.vipend = "2025-04-01T23:50:23+08:00";
+  //obj.data.config.userinfo.vipstart = "2025-04-01T23:50:23+08:00";
+  //obj.data.config.userinfo.vipend = "2099-09-12T23:50:23+08:00";
   obj.data.config.userinfo.viptype = 100;
 }
 
