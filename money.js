@@ -12,7 +12,7 @@
 
 [mitm] 
 
-hostname = cubox.pro
+hostname = qianjiapp.com
 
 *******************************/
 
