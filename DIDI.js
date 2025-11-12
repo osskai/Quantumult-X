@@ -38,14 +38,14 @@ if (url.includes("/other/pGetSceneList")) {
 
 // ✅ 首页导航处理
 if (url.includes("/homepage/v1/core")) {
-  const keepNavIds = ['dache_anycar', 'driverservice', 'bike', 'carmate'];
+  const keepNavIds = ['dache_anycar', 'driverservice', 'kuaisong', 'bike', 'carmate'];
   if (obj.data?.order_cards?.nav_list_card?.data) {
     obj.data.order_cards.nav_list_card.data = obj.data.order_cards.nav_list_card.data.filter(
       item => keepNavIds.includes(item.nav_id)
     );
   }
 
-  const keepBottomNavIds = ['v6x_home', 'home_page', 'user_center'];
+  const keepBottomNavIds = ['home_page', 'sidebar'];
   if (obj.data?.disorder_cards?.bottom_nav_list?.data) {
     obj.data.disorder_cards.bottom_nav_list.data = obj.data.disorder_cards.bottom_nav_list.data.filter(
       item => keepBottomNavIds.includes(item.id)
