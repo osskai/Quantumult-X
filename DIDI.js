@@ -92,7 +92,7 @@ if (url.includes("/usercenter/me")) {
 }
 
 // ✅ 用户中心 layout 组件处理
-if (url.includes("/v5/usercenter/layout")) {
+if (url.includes("/usercenter/layout")) {
   if (obj?.data?.instances) {
     delete obj.data.instances.center_widget_list;
     // delete obj.data.instances.center_wallet_finance_card;
