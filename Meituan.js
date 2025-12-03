@@ -9,7 +9,7 @@ try {
         if (Array.isArray(obj.data)) {
             obj.data = obj.data.filter(item => {
                 if (item && item.name) {
-                    return ["首页", "神券", "我的"].includes(item.name);
+                    return ["首页", "我的"].includes(item.name);
                 }
                 return false;
             });
